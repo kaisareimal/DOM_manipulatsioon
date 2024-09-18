@@ -1,8 +1,12 @@
 body {
     background-color: antiquewhite;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 h1 {
+    color: teal;
+    font-family: cursive;
+}
+h2 {
     color: teal;
     font-family: cursive;
 }
