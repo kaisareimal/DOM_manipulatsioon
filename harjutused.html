@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Harjutused</title>
+  </head>
+  <body>
+    <h2>Harjutus: A Simple Counter</h2>
+
+    <div class="konteiner">
+      <h1 id="display">0</h1>
+      <div id="nupud">
+        <button id="pluss">Pluss</button>
+        <button id="miinus">Miinus</button>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+
+    <h2>Harjutus: Div clicked?</h2>
+
+    <div>Div 1</div>
+
+    <p>This is a paragraph.</p>
+
+    <div>
+      Div 2
+      <button>A button</button>
+    </div>
+
+    <p>This is another paragraph.</p>
+
+    <div>
+      Div 3
+      <h3>A sub-heading</h3>
+      <p>This is yet another paragraph with a <span>span inside it</span>.</p>
+    </div>
+
+    <h2>Harjutus: Sortable table</h2>
+
+    <div id="table-container"></div>
+    <script src="harjutused.js"></script>
+    <script>
+        const data = [
+            { Nimi: "Anna", Vanus: 30, Riik: "Eesti", Amet: "IT-spetsialist"},
+            { Nimi: "Heikki", Vanus: 25, Riik: "Soome", Amet: "Arst"},
+            { Nimi: "Gustav", Vanus: 35, Riik: "Rootsi", Amet: "Vedurijuht" },
+            { Nimi: "Laado", Vanus: 28, Riik: "Läti", Amet: "Rehvivahetaja" },
+            { Nimi: "Karima", Vanus: 18, Riik: "Leedu", Amet: "Geoloog" }
+        ];
+
+        new SortableTable(data, document.getElementById('table-container'));
+    </script>
+  </body>
+</html>
