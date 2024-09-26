@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #sendItem {
+            background-color: red;
+            width: 200px;
+            margin: 30px;
+            padding: 30px;
+            border-radius: 12px;
+
+            transition: 3s all;
+            left: 0;
+        }
+        .leftTrans {left:3000px !important; position:absolute}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript test</title>
+</head>
+<body style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; background-color: #333; color: #f0f0f0;">
+    <h1 style="font-size: xxx-large;">Hello</h1>
+
+    <script type="text/javascript" src="koolitus.js"></script>
+
+    <!-- Alerts under button click -->
+
+    <h1>Let's make a deal!</h1>
+    <input type="button" value="Curtain 1" onclick="ShowCurtain(1, 'a horsie!')">
+    <input type="button" value="Curtain 2" onclick="ShowCurtain(2, 'two doves!')">
+    <input type="button" value="Curtain 3" onclick="ShowCurtain(3, 'a lifetime supply of gators!')">
+
+<!-- SWITCH -->
+
+<h1>The Vending Pending Machine</h1>
+
+<input type="button" value="1" onclick="VendingPendingMachine('16')">
+<input type="button" value="2" onclick="VendingPendingMachine('2')" >
+<input type="button" value="3" onclick="VendingPendingMachine('3')" >
+<input type="button" value="4" onclick="VendingPendingMachine('26')" >
+
+<!-- PASSWORD CHECK -->
+
+<h1>Password check</h1>
+<div id="sendItem" >
+    <form action="">
+        Password: <br>
+        <input type="password" id="password" placeholder="Password">
+        <br><br>
+        <input type="button" id="submit" value="Send!" onclick="checkValidation()">
+    </form>
+</div>
+
+<a href="/dom.html"><button>DOM leht</button></a>
+
+</body>
+</html>
